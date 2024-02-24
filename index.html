@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calcolatur">
+            <form>
+                <div class="afichage">
+                    <input  type="text" readonly name="display" id="display">
+                </div>
+                <div class="buttons">
+                    <input class="equal" type="button" value="AC"onclick="claer()">
+                    <input class="equal" type="button" value="DE"onclick="claerOne()">
+                    <input type="button" class="equal" value="." onclick="appendToDisplay('.')">
+                    <input type="button" class="equal" value="/" onclick="appendToDisplay('/')">
+                </div>
+                <div class="buttons">
+                   <input value="7" type="button" onclick="appendToDisplay('7')">
+                   <input value="8" type="button"  onclick="appendToDisplay('8')">
+                   <input value="9" type="button"  onclick="appendToDisplay('9')">
+                   <input value="*" type="button"  class="equal" onclick="appendToDisplay('*')">
+                </div>
+                <div class="buttons">
+                    <input value="4" type="button"  onclick="appendToDisplay('4')">
+                    <input value="5" type="button"  onclick="appendToDisplay('5')">
+                    <input value="6" type="button"  onclick="appendToDisplay('6')">
+                    <input value="+" type="button"  class="equal" onclick="appendToDisplay('+')">
+                 </div>
+                <div class="buttons">
+                    <input value="1" type="button"  onclick="appendToDisplay('1')">
+                    <input value="2" type="button"  onclick="appendToDisplay('2')">
+                    <input value="3" type="button"  onclick="appendToDisplay('3')">
+                    <input value="-" type="button"  class="equal" onclick="appendToDisplay('-')">
+                </div>
+                <div class="buttons">
+                    <input value="00" type="button"  onclick="appendToDisplay('00')">
+                    <input value="0" type="button"  onclick="appendToDisplay('0')">
+                    <input value="=" type="button"  class="equale" onclick="calculate()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+      
+    <script src="js/scripte.js"></script>
+</body>
+</html>
